@@ -179,7 +179,6 @@ else:
 
 display_avg_rent = avg_sqft_rent_val if has_real_rent else None
 
-# 只有当两项真实数据都具备时才计算租金压力指数，否则为 None
 if has_real_price and has_real_rent and display_avg_spend is not None and display_avg_spend > 0:
     est_monthly_rent = display_avg_rent * 400
     est_monthly_rev = display_avg_spend * 120 * 30
